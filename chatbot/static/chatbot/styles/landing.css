@@ -1,0 +1,176 @@
+:root{
+	--first-red: #D81E2C;
+	--second-red: #A00C0C;
+
+	--tryOne: #E71B24;
+	--tryTwo: #C41922;
+
+	--normal-color: #f5f7f8;
+
+	--font-color: #fff;
+}
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*text-decoration: none;
+	outline: none; border: none;*/
+}
+section{
+	padding: 0 7%;
+	padding-top: 3rem;
+}
+.home{
+	min-height: 100vh;
+	width: 90%;
+	margin: auto;
+	display: flex; 
+	align-items: center;
+	justify-content: space-around;
+}
+
+.home .image{
+	flex: 1;
+}
+.home .image img{
+	width: 100%;
+	margin-left: 10px;
+	animation: drop 1.5s ease;
+	height: 50vh;
+	
+}
+h2{
+	width: 38rem;
+}
+.home .content h2{
+	font-size: 41px;
+    font-weight: 900;
+}
+.content{
+	flex: 1;
+
+}
+
+.home .content p{
+	font-size: 1rem;
+    padding: 1rem 0rem;
+    padding-right: 25px;
+}
+a{
+	position: relative;
+	display: inline-block;
+	padding: 12px 36px;
+	margin: 10px 0;
+	border-radius: 40px;
+	background: linear-gradient(90deg,var(--tryOne),var(--tryTwo));
+	color: #fff;
+	text-decoration: none;
+	overflow: hidden;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+span{
+	position: absolute;
+	background: #fff;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	border-radius: 50%;
+	animation: animate 1s linear infinite;
+}
+@keyframes animate{
+	0%{
+		width: 0px;
+		height: 0px;
+		opacity: 0.5;
+	}
+	100%{
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
+}
+#Name{
+	width: 22rem;
+}
+@keyframes drop{
+	0%{
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 103px;
+}
+
+.wave .shape-fill {
+    fill: var(--second-red);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wave svg {
+        width: calc(144% + 1.3px);
+        height: 106px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wave svg {
+        width: calc(131% + 1.3px);
+        height: 55px;
+    }
+}
+
+@media (max-width: 1211px){
+      .home{
+          flex-direction: column-reverse;
+    }
+    .home .image img{
+	margin-top: 52px;
+	
+	}
+
+	
+}
+@media (max-width: 670px){
+	 	.content{
+	 		margin-inline: auto;
+			width: min(100%, 70.5rem);
+	 	}
+	 	.home .content h2{
+		font-size: 34px;
+    	font-weight: 900;
+    	margin-left: -16px;
+}
+.home .content p{
+	text-align:justify;
+	word-spacing:-2px;
+}

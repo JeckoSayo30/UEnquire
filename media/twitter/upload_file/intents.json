@@ -1,0 +1,953 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hey",
+                "hi",
+                "how are you",
+                "is anyone there?",
+                "hello",
+                "good day",
+                "whats up",
+                "good morning",
+                "good afternoon",
+                "good evening"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you again!",
+                "Hi there, how can I help?",
+                "What are you up to?"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "bye",
+                "cya",
+                "see you later",
+                "goodbye",
+                "i am leaving",
+                "have a good day"
+            ],
+            "responses": [
+                "Sad to see you go :(",
+                "Talk to you later",
+                "Goodbye!",
+                "It's a pleasure to have you here!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "gratitude",
+            "patterns": [
+                "Thanks",
+                "That's helpful",
+                "Thank you",
+                "Awesome, thanks",
+                "Thanks for helping me",
+                "maraming salamat",
+                "ty"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+                "Walang Anuman!",
+                "You're welcome!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [
+                " "
+            ],
+            "responses": [
+                "Sorry, I can't understand you",
+                "Please give me more info",
+                "Sorry, but can you provide more info?"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "information",
+            "patterns": [
+                "What do you offer?",
+                "what help you provide?",
+                "how could you help me?",
+                "what can you do?",
+                "can I ask you a question?"
+            ],
+            "responses": [
+                "Hello! What's your concern? You can inquire to me about anything related to the University of the East. You can also click Frequenly Asked Questions (FAQ's) button to check the most asked questions recently and the news and updates of the University!"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "Goal",
+            "patterns": [
+                "uenquire",
+                "purpose",
+                "goal",
+                "objectives",
+                "uenquire purpose",
+                "uenquire goal",
+                "uenquire mission",
+                "uenquire vision",
+                "uenquire objectives"
+            ],
+            "responses": [
+                "To accommodate University of the East inquiries and provide analysis based on UE data."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "Developer",
+            "patterns": [
+                "developers",
+                "who are the devs",
+                "creators of uenquire"
+            ],
+            "responses": [
+                "UEnquire is an application developed as a research study for 4th year course BS computer Science by the Researchers: Eugene M. Reyes, Jecko Sayo, Kristoffer B. Salonga, Cariel D. Payumo, Peter Lemuel Zamora"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "News & Updates",
+            "patterns": [
+                "news and updates",
+                "news & updates",
+                "trending",
+                "latest news"
+            ],
+            "responses": [
+                "For latest news and updates, please click the 'FAQ's' button on the right side of 'SEND' button."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "enroll_howto",
+            "patterns": [
+                "how to enroll online?",
+                "where can I enroll?",
+                "how to apply",
+                "what are the requirements",
+                "procedures of enrollment",
+                "Application",
+                "I would like to know how I can enroll?"
+            ],
+            "responses": [
+                "If you are new to UE, please refer to these links to see how to apply, the requirements and procedures.\n\n\u00e2\u20ac\u00a2APPLYING ONLINE\nhttps://www.ue.edu.ph/onlineadmission/main.html\n\n\u00e2\u20ac\u00a2ADMISSION REQUIREMENTS\nhttps://www.ue.edu.ph/mla/admission-requirements/\n\n\u00e2\u20ac\u00a2PROCEDURE OF ENROLLMENT\nhttps://www.ue.edu.ph/mla/procedure-for-enrollment/\n\n "
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "hotline",
+            "patterns": [
+                "ue hotline",
+                "number of ue",
+                "admission number",
+                "contact number",
+                "I would like to know the contact number the school"
+            ],
+            "responses": [
+                "\u00e2\u20ac\u00a2Trunk Line: (632) 8735-54-71\n\u00e2\u20ac\u00a2Admission Office: (399) 8735-8577\n\nTo see the colleges, departments and executive office's hotlines, please refer to the official website's telephone directory link:\nhttps://www.ue.edu.ph/mla/telephone-directory/ "
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "email",
+            "patterns": [
+                "what is the ue email",
+                "email address",
+                "I would like to know the email address of the school"
+            ],
+            "responses": [
+                "\u00e2\u20ac\u00a2Admission Office's Email Address (inquiries for college-freshmen and Grade 11 admission, registration, enrollment and entrance test matters): admission@ue.edu.ph\n\n\u00e2\u20ac\u00a2IT Department's Email Address (concerns, such as Student Portal, Canvas and email access): itd@ue.edu.ph\n\n\nTo see the email directory please visit this link:\nhttps://www.ue.edu.ph/mla/email-directory/"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "scheduleOfClasses",
+            "patterns": [
+                "I would like to know when is the first day of class?",
+                "when is the first day of class?",
+                "kailan bakasyon?",
+                "first day of class",
+                "when is the last day of class",
+                "last day of class",
+                "holiday breaks",
+                "bakasyon",
+                "break",
+                "sembreak",
+                "semestral break",
+                "vacation"
+            ],
+            "responses": [
+                "\u00e2\u20ac\u00a2For 1st sem of the school year 2021-2022, the first day of class will be on August 09, 2021 (M) and the Final Examinations will be held on December 15-18, 2021\n\n \u00e2\u20ac\u00a2As for the 2nd sem, the first day of class will be on January 17, 2022 (M) and the Final Examination will be held on May 25-28, 2022\n\n\n \u00e2\u20ac\u00a2The following are the list of Holiday Breaks for the School Year 2021-2022: \n\n \u00e2\u20ac\u00a3Observance of All Saints'/Souls' Day: October 31-November 02, 2021\n\n \u00e2\u20ac\u00a3Observance of Holy Week: April 13-April 17, 2021\n\n\n\nFor more information about the School Calendar, visit this link\nhttps://www.ue.edu.ph/mla/school-calendar-events-activities/"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "scheduleOfExamination",
+            "patterns": [
+                "I would like to know when is the prelim examination?",
+                "when is the midterm examination?",
+                "prelims",
+                "midterms",
+                "finals",
+                "examination"
+            ],
+            "responses": [
+                "\u00e2\u20ac\u00a2For CAS, CBA, CCSS, CDENT, CEDUC, CENG\u00e2\u20ac\u2122G, CFAD, the Preliminary Examinations, Midterm Examinations and Final Examinations of First Sem. 2021-2022 will be held on September 21-25, November 04-09 and December 15-18 respectively.\n\n\u00e2\u20ac\u00a2For CAS, CBA, CCSS, CDENT, CEDUC, CENG\u00e2\u20ac\u2122G, CFAD, the Preliminary Examinations, Midterm Examinations and Final Examinations of Second Sem. 2021-2022 will be held on February 22-28, April 02-07 and May 25-28 respectively\n\nFor Graduate School, CLAW & Graduate Denstisry,the Midterm Examinations of the First Sem 2021-2022 will be held on October 12-16 and March 17-22 for the Second Sem 2021-2022.\n\n\n\nFor more information about the School Calendar, visit this link\nhttps://www.ue.edu.ph/mla/school-calendar-events-activities/"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "admissionAndRegistrationSched",
+            "patterns": [
+                "I would like to know when is the Admission Schedule?",
+                "I would like to know when is the Registration Schedule?",
+                "when can I register?"
+            ],
+            "responses": [
+                "\u00e2\u20ac\u00a2Admission Schedule\n\n\nCollege Freshmen: June 01-August 09,2021(First Sem.2021-2022)  January 03 \u00e2\u20ac\u201c 17, 2022 (Second Sem. 2021-2022)\n\nNew Students: GS, CLAW, & Graduate Dentistry: July 01 \u00e2\u20ac\u201c August 09, 2021(First Sem.2021-2022)  January 03 \u00e2\u20ac\u201c 17, 2022 (Second Sem. 2021-2022)\n\nTransferees & Degree Holders: July 01 \u00e2\u20ac\u201c August 09, 2021(First Sem.2021-2022)  January 03 \u00e2\u20ac\u201c 17, 2022 (Second Sem. 2021-2022)\n\nCross-Registrants: July 15 \u00e2\u20ac\u201c August 09, 2021(First Sem.2021-2022)  January 03 \u00e2\u20ac\u201c 17, 2022 (Second Sem. 2021-2022)\n\n\n\u00e2\u20ac\u00a2Registration Schedule\n\n\nCollege Freshmen: June 01-August 09 (First Sem. 2021-2022)  January 03 \u00e2\u20ac\u201c 17, 2022(Second Sem. 2021-2022)\n\nNew Students: GS, CLAW, & Graduate Dentistry: July 01 \u00e2\u20ac\u201c August 09, 2021(First Sem. 2021-2022)  January 03 \u00e2\u20ac\u201c 17, 2022(Second Sem. 2021-2022)\n\nAll Curricular Years: July 27 \u00e2\u20ac\u201c August 09, 2021 (First Sem. 2021-2022)  January 07 \u00e2\u20ac\u201c 17, 2022(Second Sem. 2021-2022)\n\nTransferees & Degree Holders: July 28 \u00e2\u20ac\u201c August 09, 2021 (First Sem. 2021-2022)  January 10 \u00e2\u20ac\u201c 17, 2022(Second Sem. 2021-2022)\n\nCross-Registrants: July 28 \u00e2\u20ac\u201c August 09, 2021 (First Sem. 2021-2022)  January 10 \u00e2\u20ac\u201c 17, 2022(Second Sem. 2021-2022)"
+            ],
+            "context": "",
+            "context_set": [
+                ""
+            ]
+        },
+        {
+            "tag": "ue_portal",
+            "patterns": [
+                "how can I see my grades?",
+                "how to check my balance?",
+                "how to know my email account?",
+                "student email",
+                "how to check my class schedule?",
+                "where can I see the results of my physical medical examination?",
+                "pme",
+                "where can I download ojt forms?",
+                "forms",
+                "sao forms",
+                "forms for dropping a subject",
+                "forms for change of subjects",
+                "forms for removal of LFR marks",
+                "lfr",
+                "how to see student manual",
+                "good moral",
+                "new id",
+                "evaluate faculty",
+                "evaluation"
+            ],
+            "responses": [
+                "Visit and login to your UE Portal Account to:\n\n\u00e2\u20ac\u00a3 check your grades\n\u00e2\u20ac\u00a3 check your balance\n\u00e2\u20ac\u00a3 check your class schedule\n\u00e2\u20ac\u00a3 check the results of your Physical Medical Examination (PME)\n\u00e2\u20ac\u00a3 see the downloadable forms (OJT, LFR, New ID, Good Moral etc)\n\u00e2\u20ac\u00a3 evaluate faculty\n\u00e2\u20ac\u00a3 library Resources\n\u00e2\u20ac\u00a3 check your canvas account\n\u00e2\u20ac\u00a3 check the student manual\n\u00e2\u20ac\u00a3 evaluate the student services\n\n\nUE PORTAL WEBPAGE\nhttps://www.ue.edu.ph/portals/sp/login.php"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "payment_method",
+            "patterns": [
+                "May I know the available payment options?",
+                "I would like to know the available payment options",
+                "what are the available payment method",
+                "payment options",
+                "how to pay tuition fee",
+                "where can i pay"
+            ],
+            "responses": [
+                "There are several payment options.\n\nOption 1 (PNB)\n\nOption 2 (GCASH),\n\nOption 3 (Bills payment through Mobile Baking Application(PNB, Landbank, UCPB, EastWest, RCBC, PSBank, Chinabank, Security Bank, Union Bank, etc))\n\nOption 4 (Payment through Mobile Banking Application (Metrobank, BPI, and BDO))\n\nType the option do you preferred."
+            ],
+            "context": [
+                "payment_method"
+            ],
+            "context_set": [
+                "Option_1",
+                "Option_2",
+                "Option_3",
+                "Option_4"
+            ]
+        },
+        {
+            "tag": "Option_1",
+            "patterns": [
+                "may i know how to pay with pnb?",
+                "how to pay with pnb",
+                "option1",
+                "option 1"
+            ],
+            "responses": [
+                "1. Proceed to any PNB branch near you.\n\n2. Ask for a Bills Payment Slip.\n\n3. Write the following details:\n\nCompany Name: UNIVERSITY OF THE EAST\nReference No: Please indicate your student number.\nPayor's Name: Student's Name\n\n4. Proceed to the bank teller to process your bills payment. You will be given a copy (Yellow/Blue).\n\n5. Inform the Finance Department of your payment thru e-mail.\n\nTo: finance@ue.edu.ph\nSubject: Payment for Tuition Fee\nE-mail:\n\n -Student Name\n -Student Number\n -Contact Number\n -Amount Paid\n -Date Paid\n\nAttach a copy of your proof of payment."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "Option_2",
+            "patterns": [
+                "may i know how to pay with gcash?",
+                "how to pay with gcash",
+                "option2",
+                "option 2"
+            ],
+            "responses": [
+                "1. Log-in to your online banking account.\n\n2. Select PAY BILLS or BILLS PAYMENT transaction.\n\n3. Select UE or UNIVERSITY OF THE EAST as the Biller.\n\n4. Input your 11-digit Student Number as the Account Number.\n\n5. Input the amount you have to pay.\n\n Payor's Name: Student's Name\n\n4. Proceed to the bank teller to process your bills payment. You will be given a copy (Yellow/Blue).\n\n5. Inform the Finance Department of your payment thru e-mail.\n\n6. Click NEXT or PROCEED to confirm transaction.\n\n7. Take a screenshot of the successful payment transaction.\n\n8. Inform the Finance Department of your payment thru e-mail.\n\nTo: finance@ue.edu.ph\nSubject: Payment for Tuition Fee \nE-mail:\n-Student Name\n-Student Number\n-Contact Number\n-Amount Paid\n-Date Paid\n\nAttach a copy of your proof of payment."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "Option_3",
+            "patterns": [
+                "landbank",
+                "ucpb",
+                "chinabank",
+                "eastwest",
+                "psbank",
+                "rcbc",
+                "union bank",
+                "security bank",
+                "option3",
+                "option 3"
+            ],
+            "responses": [
+                "1. Log-in to your online banking account.\n\n2. Select PAY BILLS or BILLS PAYMENT transaction.\n\n3. Select UE or UNIVERSITY OF THE EAST as the Biller.\n\n4. Input your 11-digit Student Number as the Account Number.\n\n5. Input the amount you have to pay.\n\n Payor's Name: Student's Name\n\n4. Proceed to the bank teller to process your bills payment. You will be given a copy (Yellow/Blue).\n\n5. Inform the Finance Department of your payment thru e-mail.\n\n6. Click NEXT or PROCEED to confirm transaction.\n\n7. Take a screenshot of the successful payment transaction.\n\n8. Inform the Finance Department of your payment thru e-mail.\n\nTo: finance@ue.edu.ph\nSubject: Payment for Tuition Fee \nE-mail:\n-Student Name\n-Student Number\n-Contact Number\n-Amount Paid\n-Date Paid\n\nAttach a copy of your proof of payment."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "Option_4",
+            "patterns": [
+                "option 4",
+                "option4",
+                "how to pay with metrobank",
+                "bpi",
+                "bdo"
+            ],
+            "responses": [
+                "1. Log-in to your online banking account.\n\n2. Select the FUND TRANSFER TO OTHER LOCAL BANKS transaction.\n\n3. Select Philippine National Bank.\n\n4. Input the following bank details:\nAccount Name: UNIVERSITY OF THE EAST\nAccount No.: 1653-1005-9956\n\n5. Input the amount you have to pay.\n\n Payor's Name: Student's Name\n\n4. Proceed to the bank teller to process your bills payment. You will be given a copy (Yellow/Blue).\n\n5. Confirm the details of your transaction and enter the One-Time PIN (OTP) that will be sent to your registered mobile number.\n\n6. Take a screenshot of the successful payment transaction.\n\n7. Inform the Finance Department of your payment thru e-mail.\n\nTo: finance@ue.edu.ph\nSubject: Payment for Tuition Fee \nE-mail:\n-Student Name\n-Student Number\n-Contact Number\n-Amount Paid\n-Date Paid\n\nAttach a copy of your proof of payment."
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition",
+            "patterns": [
+                "I would like to know the tuition fee",
+                "may I know how much is the tuition fee?",
+                "tuition",
+                "how much is the tuition fee?",
+                "school fee",
+                "amount of tuition"
+            ],
+            "responses": [
+                "Choose Course/Department: "
+            ],
+            "context": [
+                "tuition"
+            ],
+            "context_set": [
+                "tuition_medicine",
+                "tuition_arts_sciences",
+                "tuition_ccss",
+                "tuition_accountancy",
+                "tuition_engineering",
+                "tuition_education",
+                "tuition_junior_high",
+                "tuition_elementary",
+                "tuition_senior_high",
+                "tuition_masters"
+            ]
+        },
+        {
+            "tag": "tuition_medicine",
+            "patterns": [
+                "I would like to know how much is the tuition fee for dentistry",
+                "may i know the tuition fee for dentistry?",
+                "dentistry",
+                "dent",
+                "medicine",
+                "med"
+            ],
+            "responses": [
+                "The course you input is from the College of Dentistry. The following are the list of course: \n\n\n \u00e2\u20ac\u00a2Doctor of Dental Medicine (D.M.D) (25 units) - Php 70,521.17\n\n\u00e2\u20ac\u00a2  Doctor of Dental Medicine (D.M.D) (24 units) with Bridging Program - Php 59,922.21\n\n\u00e2\u20ac\u00a2 Dental Technology(20 units) -Php 44,028.18, "
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_arts_sciences",
+            "patterns": [
+                "how much is the tuition fee for biology",
+                "how much is the tuition fee for hospitality management",
+                "how much is the tuition fee for tourism",
+                "how much is the tuition fee for broadcasting",
+                "how much is the tuition fee for psychology",
+                "masteral in psychology",
+                "arts and sciences",
+                "cas",
+                "biology",
+                "hospitality management",
+                "legal",
+                "tourism",
+                "broadcasting",
+                "political",
+                "journalism",
+                "library",
+                "english language",
+                "international studies",
+                "mathematics",
+                "bshm",
+                "bslm",
+                "bstm",
+                "bsmb",
+                "bab",
+                "baps",
+                "baj",
+                "blis",
+                "baelp",
+                "bais",
+                "bsp",
+                "bsmsba"
+            ],
+            "responses": [
+                "The course you input is from the College of College of Art and Sciences. The following are the list of course: \n\n\n \u00e2\u20ac\u00a2Bachelor of Science Major in Biology (21 units) - Php 46,396.49\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Hospitality Management (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Legal Management (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2Bachelor of Science in Tourism Management (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2 Bachelor of Arts in Broadcasting (20 units) - Php 44,614.60\n\n\u00e2\u20ac\u00a2  Bachelor of Arts in Political Science (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2Bachelor of Arts in Journalism (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2 Bachelor of Library and Information Science (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2 Bachelor of Arts in English Language Program (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2Bachelor of Arts in International Studies (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2Bachelor of Science in Psychology (20 units) - Php 42,151.16\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Mathematics with Specialization in Business Application - Php 43,938.92"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_ccss",
+            "patterns": [
+                "I would like to know how much is the tuition fee for computer science",
+                "may i know the tuition fee for computer science?",
+                "how much is the tuition fee for cs",
+                "how much is the tuition fee for comsci",
+                "how much is the tuition fee for is",
+                "how much is the tuition fee for it",
+                "how much is the tuition fee for emc",
+                "ccss",
+                "comsci",
+                "computer science",
+                "cs",
+                "it",
+                "information technology",
+                "emc",
+                "entertainment and multimedia computing",
+                "digital animation",
+                "game development",
+                "game dev",
+                "is",
+                "information systems",
+                "bsis",
+                "bsit",
+                "bsemc"
+            ],
+            "responses": [
+                "The course you input is from the College of Computer Studies and Systems. The following are the full list of course: \n\n\n \u00e2\u20ac\u00a2 Bachelors of Science in Computer Science (BSCS)(20 Units) - Php 42,419.69\n\n\u00e2\u20ac\u00a2Bachelor of Science in Information Technology (BSIT)(20 Units) Php 42,419.69\n\n\u00e2\u20ac\u00a2Bachelor of Science in Entertainment and Multimedia Computing with Specialization in Digital Animation (BSEMC-DA)(21 Units) - Php 44,744.52\n\n\u00e2\u20ac\u00a2Bachelor of Science in Entertainment and Multimedia Computing with Specialization in Game Development(BSEMC-GD)(21 Units) - Php 44,744.52\n\nBachelor of Science in Information Systems (BSIS)(20 Units) - Php 42,419.69"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_accountancy",
+            "patterns": [
+                "I would like to know how much is the tuition fee for accountancy",
+                "may i know the tuition fee for accountancy?",
+                "how much is the tuition fee for accountancy",
+                "how much is the tuition fee for accounting",
+                "how much is the tuition fee for economics",
+                "how much is the tuition fee for marketing",
+                "accountancy",
+                "management accounting",
+                "business economics",
+                "financial",
+                "marketing",
+                "bsa",
+                "bsma",
+                "bbe",
+                "be",
+                "bme",
+                "bfn",
+                "fn",
+                "bmm"
+            ],
+            "responses": [
+                "The course you input is from the College of Business Administration. The following are the full list of course: \n\n\n \u00e2\u20ac\u00a2 Bachelors of Science in Accountancy (BSA)(26 Units) - Php 55,320.48\n\n\u00e2\u20ac\u00a2Bachelor of Science in Management Accounting (BSMA)(26 Units) Php 55,320.48\n\n\u00e2\u20ac\u00a2BSBA Major in Business Economics (BBE)(23 Units) - Php 49,929.77\n\n\u00e2\u20ac\u00a2BSBA Major in Business Management (BME)(23 units) - Php 47,514.45\n\n\u00e2\u20ac\u00a2 BSBA Major in Financial Management (BFN)(23 Units) - Php 47,514.45\n\n\u00e2\u20ac\u00a2 BSBA Major in Marketing Management (BMM)(23 Units) - Php 47,514.45"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_engineering",
+            "patterns": [
+                "I would like to know how much is the tuition fee for engineering",
+                "may i know the tuition fee for engineering",
+                "how much is the tuition fee for engineering",
+                "how much is the tuition fee for electrical",
+                "how much is the tuition fee for civil",
+                "how much is the tuition fee for mechanical",
+                "engineering",
+                "eng",
+                "civil",
+                "computer engineering",
+                "electrical",
+                "mechanical",
+                "bsce",
+                "ce",
+                "cpe",
+                "ee",
+                "bscpe",
+                "bsee",
+                "bsme",
+                "civ",
+                "mech",
+                "electric",
+                "engineer"
+            ],
+            "responses": [
+                "The course you input is from the College of Engineering. The following are the full list of course: \n\n\n\u00e2\u20ac\u00a2 Bachelors of Science in Civil Engineering (BSCE)(20 Units) - Php 42,276.04\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Civil Engineering (BSCE) (24 units) with Bridging Program Php 49,427.09\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Computer Engineering (BSCOE) (18units) - Php 39,057.86\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Computer Engineering (BSCOE) (22 units) with Bridging Program - Php 46,208.90\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Mechanical Engineering (BSME) (19 units) - Php 40,688.68\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Mechanical Engineering (BSME) (23 units) with Bridging Program - Php 47,839.73\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Electrical Engineering (BSEE) (20 units) - Php 45,170.21\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Electrical Engineering (BSEE) (24 units) with Bridging Program - Php 48,745.73"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_education",
+            "patterns": [
+                "I would like to know how much is the tuition fee for education",
+                "may i know the tuition fee for education?",
+                "may i know the tuition fee for masteral in education?",
+                "educ",
+                "physical education",
+                "pe",
+                "exercise sciences major in fitness and sports",
+                "special needs education - generalist",
+                "elementary education",
+                "nutrition and dietetics",
+                "secondary",
+                "bped",
+                "bsned",
+                "beed",
+                "bsnd",
+                "bsed"
+            ],
+            "responses": [
+                "The course you input is from the College of Education. The following are the full list of course: \n\n\n\u00e2\u20ac\u00a2 Bachelor of Physical Education (BPEd) (23 units) - Php 42,552.06\n\n\u00e2\u20ac\u00a2 Bachelor of Science in Exercise Sciences Major in Fitness and Sports - Php 42,552.06\n\n\u00e2\u20ac\u00a2 Bachelor of Special Needs Education - Generalist (BSNEd-Generalist) (23 units) - Php 42,552.06\n\n\u00e2\u20ac\u00a2Bachelor of Elementary Education (BEEd) (26 units) - Php 47,222.40\n\n\u00e2\u20ac\u00a2Bachelor of Science in Nutrition and Dietetics (BSND) (24 units) - Php 47,312.04\n\n\u00e2\u20ac\u00a2Bachelor of Secondary Education (BSEd) (26 units) - Php 47,222.40"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_junior_high",
+            "patterns": [
+                "I would like to know how much is the tuition fee for junior high school",
+                "may i know the tuition fee for junir high school?",
+                "junior",
+                "grade 7",
+                "8",
+                "9",
+                "10",
+                "grade 7-10",
+                "seven",
+                "eight",
+                "nine",
+                "ten",
+                "grade7",
+                "grade8",
+                "grade9",
+                "grade10",
+                "jhs",
+                "high school"
+            ],
+            "responses": [
+                "The course you input is from the Department of Education(Junior Highschool). The following are the full list of the department: \n\n\n\u00e2\u20ac\u00a2 GRADE 7 - Php 42,278.31\n\n\u00e2\u20ac\u00a2 GRADE 8 - Php 41,821.61\n\n \u00e2\u20ac\u00a2 GRADE 9 - Php 41,821.61\n\n\u00e2\u20ac\u00a2 GRADE 10 - Php 43,033.49"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_senior_high",
+            "patterns": [
+                "I would like to know how much is the tuition fee for senior high school",
+                "may i know the tuition fee for senior high?",
+                "senior high",
+                "shs",
+                "grade11",
+                "grade12",
+                "grade 11",
+                "12",
+                "grade 11-12",
+                "eleven",
+                "twelve",
+                "stem",
+                "abm",
+                "humss",
+                "gas"
+            ],
+            "responses": [
+                "The course you input is from the Department of Education(Senior Highschool). The following are the full list of the department: \n\n\n\u00e2\u20ac\u00a2 GRADE 11 - Php 47,901.42\n\n\u00e2\u20ac\u00a2 GRADE 12 - Php 48,750.47"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_elementary",
+            "patterns": [
+                "I would like to know how much is the tuition fee for elementary",
+                "may i know the tuition fee for elementary?",
+                "elementary",
+                "grade1",
+                "grade2",
+                "grade3",
+                "grade4",
+                "grade5",
+                "grade6",
+                "grade 1",
+                "grade 2",
+                "grade 3",
+                "grade 4",
+                "grade 5",
+                "grade 6",
+                "grades 1-6",
+                "primary"
+            ],
+            "responses": [
+                "The basic education you input is from the Elementary Section. The following are the list of tuition fee of each grade: \n\n\n\u00e2\u20ac\u00a2 GRADE 1 - Php 40,333.70\n\n\u00e2\u20ac\u00a2 GRADE 2 - Php 39,877.00\n\n\u00e2\u20ac\u00a2 GRADE 3 - Php 39,877.00\n\n\u00e2\u20ac\u00a2 GRADE 4 - Php 40,334.99\n\n\u00e2\u20ac\u00a2 GRADE 5 - Php 40,334.99\n\n\u00e2\u20ac\u00a2 GRADE 6 - Php 41,321.16"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "tuition_masters",
+            "patterns": [
+                "how much is the tuition fee for masteral",
+                "masters",
+                "doctoral",
+                "doctorate",
+                "ma"
+            ],
+            "responses": [
+                "The course you input is from the Master's Degree Program. The following are the list of tuition fee of each course: \n\n\n\u00e2\u20ac\u00a2 Master of Arts in Education - Php 30,465.39 \n\n \u00e2\u20ac\u00a2 Master of Arts in Teaching - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Master of Arts in Psychology - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Master of Arts in Psychology - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Master in Education - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Master in Business Administration ( Executive ) - Php 33,749.85\n\n\u00e2\u20ac\u00a2 Master in Business Administration ( Regular) - Php 31,917.77\n\n\u00e2\u20ac\u00a2 Master in Engineering Science - Php 33,749.85\n\n\u00e2\u20ac\u00a2 Master in Information Systems - Php 31,917.77\n\n\u00e2\u20ac\u00a2 Master of Library and Information Science - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Master of Public Administration - Php 31,917.77\n\n\u00e2\u20ac\u00a2 Master in Accountancy (Non-Thesis/ Industry Track) - Php 31,917.77\n\n\u00e2\u20ac\u00a2 Master of Science in Accountancy (With Thesis)\n\n\u00e2\u20ac\u00a2 - Php 31,917.77\n\n\u00e2\u20ac\u00a2 Master of Science in Construction Management (Executive) - Php 33,749.85\n\n\u00e2\u20ac\u00a2  Master of Science in Construction Management ( Regular) - Php 31,917.77\n\n\u00e2\u20ac\u00a2 Master of Science in Environmental Science - Php 30,465.39\n\n Master of Science in Mathematics - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Master of Science in Biology - Php 30,465.39\n\n\u00e2\u20ac\u00a2 Doctor of Business Administration - Php 36,948.79\n\n\u00e2\u20ac\u00a2 Doctor of Education - Php 36,948.79\n\n\u00e2\u20ac\u00a2 Doctor of Information Technology - Php 36,948.79\n\n\u00e2\u20ac\u00a2 Doctor of Philosophy in Multidisciplinary Metropolitan Studies - Php 36,948.79\n\n\u00e2\u20ac\u00a2 Master of Science in Dental Education - Php 30,465.39\n\n\u00e2\u20ac\u00a2 BSBA (Management)(15 units) Special Degree Program - Php 54,250.65"
+            ],
+            "context": "",
+            "context_set": []
+        },
+        {
+            "tag": "associate in health science education (ahse)",
+            "patterns": [
+                "associate in health science education (ahse)"
+            ],
+            "responses": [
+                "loc 327"
+            ]
+        },
+        {
+            "tag": "college of arts and sciences",
+            "patterns": [
+                "college of arts and sciences"
+            ],
+            "responses": [
+                "loc 370"
+            ]
+        },
+        {
+            "tag": "college of business administration",
+            "patterns": [
+                "college of business administration"
+            ],
+            "responses": [
+                "loc 354"
+            ]
+        },
+        {
+            "tag": "college of computer studies and systems",
+            "patterns": [
+                "college of computer studies and systems"
+            ],
+            "responses": [
+                "loc 382"
+            ]
+        },
+        {
+            "tag": "college of dentistry",
+            "patterns": [
+                "college of dentistry"
+            ],
+            "responses": [
+                "loc 604"
+            ]
+        },
+        {
+            "tag": "college of education",
+            "patterns": [
+                "college of education"
+            ],
+            "responses": [
+                "loc 385"
+            ]
+        },
+        {
+            "tag": "basic education dept.",
+            "patterns": [
+                "basic education dept."
+            ],
+            "responses": [
+                "loc 386"
+            ]
+        },
+        {
+            "tag": "college of engineering / ite",
+            "patterns": [
+                "college of engineering / ite"
+            ],
+            "responses": [
+                "loc 397"
+            ]
+        },
+        {
+            "tag": "graduate school",
+            "patterns": [
+                "graduate school"
+            ],
+            "responses": [
+                "loc 374"
+            ]
+        },
+        {
+            "tag": "college of law",
+            "patterns": [
+                "college of law"
+            ],
+            "responses": [
+                "loc 324"
+            ]
+        },
+        {
+            "tag": "physical education",
+            "patterns": [
+                "physical education"
+            ],
+            "responses": [
+                "loc 352"
+            ]
+        },
+        {
+            "tag": "associate in health science education (ahse)",
+            "patterns": [
+                "associate in health science education (ahse)"
+            ],
+            "responses": [
+                "loc 327"
+            ]
+        },
+        {
+            "tag": "college of arts and sciences",
+            "patterns": [
+                "college of arts and sciences"
+            ],
+            "responses": [
+                "loc 370"
+            ]
+        },
+        {
+            "tag": "college of business administration",
+            "patterns": [
+                "college of business administration"
+            ],
+            "responses": [
+                "loc 354"
+            ]
+        },
+        {
+            "tag": "college of computer studies and systems",
+            "patterns": [
+                "college of computer studies and systems"
+            ],
+            "responses": [
+                "loc 382"
+            ]
+        },
+        {
+            "tag": "college of dentistry",
+            "patterns": [
+                "college of dentistry"
+            ],
+            "responses": [
+                "loc 604"
+            ]
+        },
+        {
+            "tag": "college of education",
+            "patterns": [
+                "college of education"
+            ],
+            "responses": [
+                "loc 385"
+            ]
+        },
+        {
+            "tag": "basic education dept.",
+            "patterns": [
+                "basic education dept."
+            ],
+            "responses": [
+                "loc 386"
+            ]
+        },
+        {
+            "tag": "college of engineering / ite",
+            "patterns": [
+                "college of engineering / ite"
+            ],
+            "responses": [
+                "loc 397"
+            ]
+        },
+        {
+            "tag": "graduate school",
+            "patterns": [
+                "graduate school"
+            ],
+            "responses": [
+                "loc 374"
+            ]
+        },
+        {
+            "tag": "college of law",
+            "patterns": [
+                "college of law"
+            ],
+            "responses": [
+                "loc 324"
+            ]
+        },
+        {
+            "tag": "physical education",
+            "patterns": [
+                "physical education"
+            ],
+            "responses": [
+                "loc 352"
+            ]
+        },
+        {
+            "tag": "associate in health science education (ahse)",
+            "patterns": [
+                "associate in health science education (ahse)"
+            ],
+            "responses": [
+                "loc 327"
+            ]
+        },
+        {
+            "tag": "college of arts and sciences",
+            "patterns": [
+                "college of arts and sciences"
+            ],
+            "responses": [
+                "loc 370"
+            ]
+        },
+        {
+            "tag": "college of business administration",
+            "patterns": [
+                "college of business administration"
+            ],
+            "responses": [
+                "loc 354"
+            ]
+        },
+        {
+            "tag": "college of computer studies and systems",
+            "patterns": [
+                "college of computer studies and systems"
+            ],
+            "responses": [
+                "loc 382"
+            ]
+        },
+        {
+            "tag": "college of dentistry",
+            "patterns": [
+                "college of dentistry"
+            ],
+            "responses": [
+                "loc 604"
+            ]
+        },
+        {
+            "tag": "college of education",
+            "patterns": [
+                "college of education"
+            ],
+            "responses": [
+                "loc 385"
+            ]
+        },
+        {
+            "tag": "basic education dept.",
+            "patterns": [
+                "basic education dept."
+            ],
+            "responses": [
+                "loc 386"
+            ]
+        },
+        {
+            "tag": "college of engineering / ite",
+            "patterns": [
+                "college of engineering / ite"
+            ],
+            "responses": [
+                "loc 397"
+            ]
+        },
+        {
+            "tag": "graduate school",
+            "patterns": [
+                "graduate school"
+            ],
+            "responses": [
+                "loc 374"
+            ]
+        },
+        {
+            "tag": "college of law",
+            "patterns": [
+                "college of law"
+            ],
+            "responses": [
+                "loc 324"
+            ]
+        },
+        {
+            "tag": "physical education",
+            "patterns": [
+                "physical education"
+            ],
+            "responses": [
+                "loc 352"
+            ]
+        }
+    ]
+}

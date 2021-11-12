@@ -1,0 +1,86 @@
+{% extends 'twitter/upload_file/main_upload.html' %}
+{% block title %}
+
+Upload file 
+
+{% endblock %}
+{% block content %}
+
+ <div class="main">
+
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="exampleFormControlFile1">Example file input .xlsx, .xls, .csv, .json</label>
+      <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
+      <button type="submit" name="upload">Upload file</button>
+    </div>
+  </form>
+ </div>
+<div class="view_settings">
+	<div style="float:left; padding: 25px;">
+		<p>Training Settings:</p>
+		<p>Test Size: {{classifier_settings.test_size}}</p>
+		<p>Random State: {{classifier_settings.rand_state}}</p>
+		<p>Average option: {{classifier_settings.average}}</p><br>
+	</div>
+	<div>
+		<!-- If not exist, print(None trained classifier model) -->
+		<p>Classifier Description:</p>
+		<p>Number of Correct: {{model_desc.correct}}</p>
+		<p>Number of Incorrect: {{model_desc.incorrect}}</p>
+		<p>Accuracy: {{model_desc.accuracy}}</p>
+		<p>Recall Score: {{model_desc.recall}}</p>
+		<p>Precision Score: {{model_desc.precision}}</p>
+		<p>F1 Score: {{model_desc.f1_score}}</p><br>
+	</div>
+</div>
+<div class="classfier_inputs">
+	<form method="POST">
+		{% csrf_token %}
+		<!-- Test size = decimal from 0-1, example: 0.30(default) -->
+		<!-- Random state = integer from 1-100, example: 88 (default)-->
+		<!-- Average = (None, 'micro', 'macro'(default), 'weighted', 'samples') -->
+		Set Training Parameters;<br>
+		Test size(decimal):<input type="text" name="test_size"><br>
+		Random State:<input type="text" name="random_state"><br>
+		Average:<input type="text" name="average">
+		<input type="submit" name="new_settings">
+	</form>
+	
+</div>
+<div class="file_table">
+	<table>				
+		<thead>
+			<tr>
+				<th>NUMBER</th>
+				<th>FILE NAME</th>
+				<th>FILE EXTENSION</th>
+				<th>FILE PATH</th>
+				<th>TRAIN AS MODEL</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for i in files %}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<td>{{i.name}}</td>
+				<td>{{i.file_type}}</td>
+				<td>{{i.file}}</td>
+				<td>
+					<form method="POST">
+						{% csrf_token %}
+						<input type="submit" name="train_model" value="{{i.name}}">
+					</form>
+				</td>
+				
+			</tr>
+			{% endfor %}
+		</tbody>
+
+	</table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock scripts %}

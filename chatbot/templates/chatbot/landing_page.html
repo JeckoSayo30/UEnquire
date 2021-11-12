@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UEnquire</title>
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+	<link rel="stylesheet" href="{% static 'chatbot/styles/landing.css' %}?{% now "U" %}"">
+</head>
+<body>
+<div class="wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+
+	<section class="home" id="home">
+		<div class="content">
+			<h2>Welcome to UEnquire</h2>
+			 <p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Eius culpa optio quibusdam veniam, nulla deserunt, minus quos dicta eum magnam!</p>
+			<form action="" id="myform" method="POST">
+				{% csrf_token %}
+				<div class="form-group">
+
+  				<label for="name">What is your nickname?</label>
+  				<br>
+
+  				<input type="text" class="form-control" id="Name" name="user_name"><br>
+  				<input type="radio" id="male" name="gender" value="Male">
+ 				<label for="html">Male</label>
+ 				<input type="radio" id="female" name="gender" value="Female">
+				<label for="css">Female</label><br>	
+  				<a href="#" type="submit" onclick="document.getElementById('myform').submit()" name="submitOne">Submit</a>
+  				</div>
+  				{% for message in messages %}
+  				<script type="text/javascript">
+  					window.onload = function(){
+  						alert('{{message}}')
+  					}
+  				</script>
+  				{% endfor %}
+			</form>
+		</div>
+		<div class="image">
+			<img src="{% static 'chatbot/img/chatbot-marketing.gif' %}" alt="">
+		</div>
+
+	</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+	const buttons = document.querySelectorAll('a');
+	buttons.forEach(btn =>{
+		btn.addEventListener('click', function(e){
+
+			let x = e.clientX - e.target.offsetLeft;
+			let y = e.clientY - e.target.offsetTop;
+
+			let ripples = document.createElement('span');
+			ripples.style.left = x + 'px';
+			ripples.style.top = y + 'px';
+			this.appendChild(ripples);
+
+			setTimeout(()=>{
+				ripples.remove()
+			},1000);
+		})
+	})
+
+
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseCookie(name) {   
+    document.cookie = name+'=; Max-Age=-99999999;';  
+}
+
+</script>
+</body>
+</html>
